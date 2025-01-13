@@ -1,4 +1,5 @@
 #/usr/bin/bash
+# Author Xuan Zhou
 
 bed=$1
 name=$2
@@ -34,7 +35,7 @@ do
             grep -w $l $line.txt > $line.bed
             mv $line.bed backup_dir/$line.bed # mv the GN to backup_dir
             rm $line.txt
-            echo $line # mark in the log file
+            echo $line # mark the gene name in the log file
         done
         rm tmp.chr_name
     fi

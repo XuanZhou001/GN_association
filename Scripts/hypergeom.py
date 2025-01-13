@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+Author Xuan Zhou
+The core script of the GN association analysis.
+"""
+
+
 import os
 import sys
 import re
@@ -66,9 +72,9 @@ with open(clade_file, 'r') as r, open("Clade_tmp", 'w') as w:
 get_according_intersection("Clade_tmp", "hmmout_anno.txt", "geneID", "all.bed.anno.txt", "left")
 
 clade_df = pd.read_csv("all.bed.anno.txt", sep='\t', header=None, skiprows=1) # 
-clade_value_counts = clade_df.iloc[:, 6].value_counts() # 第七列
-clade_value_counts_dict = clade_value_counts.to_dict() # k字典
-K = sum(clade_value_counts_dict.values()) # 被选择K
+clade_value_counts = clade_df.iloc[:, 6].value_counts() # seven
+clade_value_counts_dict = clade_value_counts.to_dict() # k dictionary
+K = sum(clade_value_counts_dict.values()) # K number
 
 
 p_list = []

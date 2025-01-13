@@ -7,6 +7,7 @@ import difflib
 
 """
 get fasta from sequence name
+Author: Xuan Zhou
 """
 
 fa = sys.argv[1] # input

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-#
+
+# cite the BiG-SCAPE
 
 from difflib import SequenceMatcher
 from scipy.optimize import linear_sum_assignment
